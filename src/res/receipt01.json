@@ -1,0 +1,106 @@
+{
+	"title": "Eierpfannkuchen",
+	"ingredients" : [
+		{
+			"id": 1,
+			"name": "Milch",
+			"amount": 125,
+			"measurement": "ml"
+		},
+		{
+			"id": 2,
+			"name": "Wasser",
+			"amount": 125,
+			"measurement": "ml"
+		},
+		{
+			"id": 3,
+			"name": "Eier",
+			"amount": 2,
+			"measurement": "Stk."
+		},
+		{
+			"id": 4,
+			"name": "Salz",
+			"amount": 1,
+			"measurement": "Pri­se"
+		},
+		{
+			"id": 5,
+			"name": "Mehl",
+			"amount": 100,
+			"measurement": "g"
+		},
+		{
+			"id": 6,
+			"name": "Fett",
+			"amount": 1,
+			"measurement": "el"
+		},
+		{
+			"id": 7,
+			"name": "Zimt",
+			"optional": true
+		},
+		{
+			"id": 8,
+			"name": "Zucker",
+			"optional": true
+		}
+	],
+	"servings": 2,
+	"instructions" : [
+		{
+			"step": "1a",
+			"text": "Als erstes das Ei aufschlagen, damit Bruchstücke der Schaale einfach entfernt werden können.",
+			"task": "break",
+			"usedIngredients": [3]
+		},
+		{
+			"step": "2a",
+			"text": "Anschließend das aufgeschlagene Ei mit der Milch und dem Wasser mixen.",
+			"task": "mix",
+			"requiredSteps": ["1"],
+			"usedIngredients": [1, 2]
+		},
+		{
+			"step": "1b",
+			"text": "Das Mehl in einem seperaten Behälter abmessen.",
+			"task": "weight",
+			"usedIngredients": [5]
+		},
+		{
+			"step": "2b",
+			"text": "Das Salz auf das Mehl streuen und vermischen.",
+			"task": "mix",
+			"requiredSteps": ["1b"],
+			"usedIngredients": [4]
+		},
+		{
+			"step": "3",
+			"text": "Nun das Mehl mit den flüssigen Zutaten verrühren.",
+			"task": "mix-in",
+			"requiredSteps": ["2a","2b"]
+		},
+		{
+			"step": "4",
+			"text": "Optional kann der Teig nun im Kühlschrank für einige Zeit gekühlt werden, um später verarbeitet zu werden.",
+			"task": "cool",
+			"requiredSteps": ["3"],
+			"optional": true
+		},
+		{
+			"step": "5",
+			"text": "Den Teig in einer Pfanne auf mittlerer Hitze im Fett braten, bis er leicht gebräunt ist.",
+			"task": "pan-fry",
+			"requiredSteps": ["3"],
+			"usedIngredients": [6]
+		},		
+		{
+			"step": "6",
+			"text": "Die gebratenen Pfannkuchen optional mit Zimt und Zucker bestreuen und servieren.",
+			"task": "pan-fry",
+			"requiredSteps": ["5"]
+		}
+	]
+}
