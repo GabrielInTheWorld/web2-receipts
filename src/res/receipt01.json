@@ -1,5 +1,6 @@
 {
 	"title": "Eierpfannkuchen",
+	"images": ["pancake.jpg"],
 	"ingredients" : [
 		{
 			"id": 1,

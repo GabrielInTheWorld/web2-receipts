@@ -1,12 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { PreviewBlock } from "./components/PreviewBlock";
+import { ReceiptPage } from "./components/ReceiptPage";
 import * as INS from "./components/Ingredient";
 
-//import json from './components/receipt01.json';
-
-//http://localhost:8000/src/res/receipt01.json
+// Todo: Link to index
 
 import * as request from "superagent"
 
@@ -18,7 +16,7 @@ request
     // ingredientJSON = res.body.ingredients;
 
     ReactDOM.render(
-        <PreviewBlock model={res.body} />,
+        <ReceiptPage model={res.body} />,
         // <ShoppingList name="FancyList" />,
         //  <Hello compiler="TypeScript" framework="React" />,
         document.getElementById("example")

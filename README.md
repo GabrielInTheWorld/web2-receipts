@@ -8,11 +8,62 @@ python -m SimpleHTTPServer;
 
 ### Todo
 
+General:
+
 * Proper build progress (watch -> compile)
 * Tasklist
 * Assign Tasks to team-members
 * Add react conform licence
   ...
+
+Pages:
+
+* Public
+  * Frontpage
+  * SearchResult
+  * ReceiptView
+* Post-Login
+  * UserFrontpage
+  * ReceiptEditPage (=NewReceiptPage)
+
+Elements:
+
+* Menubar
+  * Searchbar
+    * SearchSuggestionsDropDownOverlay
+      * SearchSuggestionsDropDownOverlayItem
+  * PageSelector
+  * LoginBox
+    * `<input>`
+      * Username
+      * Password
+      * Login-Button
+* ReceiptPreview
+  * ReceiptPreviewOverlay
+  * ReceiptPreview-`<img>`
+* ReceiptViewer
+  * IngredientTable
+    * IngredientItem
+  * InstructionList
+    * InstructionItem
+  * Title
+  * Servings
+  * …?
+* ReceiptEditor
+  * MetadataEditor (Title, Servings, ...)
+  * InstructionEditor
+  * IngredientEditor
+  * PreviewView
+
+### WIP Images
+
+![ReceiptPreview](./ReceiptPreview.png)
+
+- ReceiptPreview
+
+![ReceiptView](./ReceiptView.png)
+
+* ReceiptView
 
 ### Notes
 Get missing type definition for new modules

@@ -33,3 +33,45 @@ html,body {
     grid-column: col1-start;
     grid-row: row2-start ;
 }*/
+.overlayTextBox {
+    left: 0;
+    position: sticky;
+    bottom: 0;
+    background: 0 0 rgba(0, 0, 0, 0.4);
+    height: 2.5rem;
+    padding: 0.1rem 0.1rem 0.01rem 0.1rem;
+    padding-bottom: 0.01rem;
+    -webkit-transition: padding-bottom 1s; /* Safari */
+    transition: padding-bottom 1s;
+}
+
+.overlayTextBox:hover {
+    padding-bottom: 1rem;
+}
+
+.overlayText {
+    color: white;
+    font-size: x-large;
+    font-family: Helvetica Neue;
+    font-weight: 100;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.previewBlock {
+    width: 512px;
+    height: 288px;
+    overflow: hidden;
+}
+
+.previewBlock>a>img{
+    filter: blur(0px);
+    -webkit-transition: filter 1s; /* Safari */
+    transition: filter 1s;
+}
+
+.previewBlock>a>img:hover {
+    filter: blur(5px);
+}
