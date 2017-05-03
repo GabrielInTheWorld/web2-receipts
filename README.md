@@ -3,7 +3,8 @@
 ```
 npm install;
 ./node_modules/.bin/webpack;
-python -m SimpleHTTPServer;
+For python-version less than 3: python -m SimpleHTTPServer;
+For python-version higher than 3: python -m http.server;
 ```
 
 ### Todo
